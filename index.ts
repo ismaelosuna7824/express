@@ -32,7 +32,7 @@ app.use('/user', userRoutes)
 app.use('/posts', PostRoutes)
 
 //Conectar DB
-mongoose.connect(process.env.MONGODB || 'mongodb+srv://ismael:nanocore32100@cluster0-uyiks.mongodb.net/test?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://ismael:nanocore32100@cluster0-uyiks.mongodb.net/test?retryWrites=true&w=majority', 
             { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false});
 
 

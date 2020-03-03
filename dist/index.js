@@ -26,7 +26,7 @@ app.use(cors_1.default({ origin: true, credentials: true }));
 app.use('/user', usuario_1.default);
 app.use('/posts', post_1.default);
 //Conectar DB
-mongoose_1.default.connect(process.env.MONGODB || 'mongodb+srv://ismael:nanocore32100@cluster0-uyiks.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false });
+mongoose_1.default.connect('mongodb+srv://ismael:nanocore32100@cluster0-uyiks.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false });
 //Levantar express
 /*server.start(() => {
     console.log(`servidor en ${PORT}`);
