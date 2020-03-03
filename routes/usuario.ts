@@ -119,6 +119,10 @@ userRoutes.get('/geUser', [verificaToken], (req: any, resp:Response) =>{
         usuario
     })
 });
+
+userRoutes.get('/usuario', (req: any, resp:Response) =>{
+    resp.json('mi usuasio')
+});
    
 
 export default userRoutes;
